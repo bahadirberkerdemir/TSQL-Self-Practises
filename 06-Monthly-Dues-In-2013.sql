@@ -2,8 +2,8 @@ USE AdventureWorks2022
 GO
 
 SELECT
- 	MONTH(OrderDate) [Month],
- 	SUM(TotalDue) [Monthly Income]
+Â 	MONTH(OrderDate) [Month],
+Â 	SUM(TotalDue) [Monthly Income]
 FROM Sales.SalesOrderHeader
 WHERE YEAR(OrderDate) = 2013
 
