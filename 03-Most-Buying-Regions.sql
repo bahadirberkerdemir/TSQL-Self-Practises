@@ -2,12 +2,12 @@ USE AdventureWorks2022
 GO
 
 SELECT
- 	STE.Name as [Region],
- 	SUM(SOH.TotalDue) as [Total Due]
+Â 	STE.Name as [Region],
+Â 	SUM(SOH.TotalDue) as [Total Due]
 FROM
- 	Sales.SalesOrderHeader SOH
+Â 	Sales.SalesOrderHeader SOH
 JOIN
- 	Sales.SalesTerritory STE
+Â 	Sales.SalesTerritory STE
 ON STE.TerritoryID = SOH.TerritoryID
 
 Group BY Name
