@@ -2,9 +2,9 @@ USE AdventureWorks2022
 GO
 
 SELECT
- 	CustomerID [Customer No],
- 	Count(*) [SellAmount],
- 	AVG(SubTotal) [Average Spending]
+Â 	CustomerID [Customer No],
+Â 	Count(*) [SellAmount],
+Â 	AVG(SubTotal) [Average Spending]
 FROM Sales.SalesOrderHeader
 Group BY CustomerID
 Order BY SellAmount DESC;
