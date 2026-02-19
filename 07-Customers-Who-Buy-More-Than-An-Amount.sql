@@ -2,7 +2,7 @@ USE AdventureWorks2022
 GO
 
 SELECT CustomerID [Customer ID],
- 	SUM(TotalDue) [Total Buying]
+Â 	SUM(TotalDue) [Total Buying]
 FROM Sales.SalesOrderHeader
 
 Group BY CustomerID
